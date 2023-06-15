@@ -6,7 +6,12 @@ import Link from 'next/link'
 
 const Navbar = () => {
 
-  const items = ['Activities', 'Technology', 'R&D', 'Community']
+  const items = [
+    { id: 1, name: 'Activities' },
+    { id: 2, name: 'Technology' },
+    { id: 3, name: 'R&D' },
+    { id: 4, name: 'Community' },
+  ]
 
   // to change burger class
   const [burgerClass, setBurgerClass] = useState(`${styles.burgder_bar} ${styles.unclicked}`)
@@ -36,7 +41,7 @@ const Navbar = () => {
         <Link href="/" className={styles.logo}>C</Link>
         <div className={itemsClass}>
           <ul>
-            { items.map(item => <li id={item}><Link href="/" onClick={updateMenu}>{item}</Link></li>) }
+            { items.map(item => <li key={item.id}><Link href="/" onClick={updateMenu}>{item.name}</Link></li>) }
           </ul>
           <div className={styles.btn} onClick={updateMenu}>
             <p>Career</p>

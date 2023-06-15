@@ -11,7 +11,7 @@ const About = () => {
     <section className={styles.about}>
       <m.div
         initial={{ y: 0 }}
-        whileInView={{ y: 40 }}
+        whileInView={{ y: 20 }}
         transition={{ delay: 3, type: "spring", stiffness: 400, damping: 10 }}
         className={styles.mouse}
       >
@@ -28,9 +28,9 @@ const About = () => {
       </div>
       <div className={styles.article}>
         <m.div
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2, type: "spring", stiffness: 400, damping: 10 }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 300, damping: 10 }}
           className={styles.chart}
         >
           <Image
@@ -41,9 +41,9 @@ const About = () => {
           />
         </m.div>
         <m.div
-          initial={{ opacity: 0, x: 200 }}
+          initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.4, type: "spring", stiffness: 400, damping: 10 }}
+          transition={{ delay: 0.4, type: "spring", stiffness: 300, damping: 10 }}
           className={styles.level}
         >
           <h3>Level 1</h3>

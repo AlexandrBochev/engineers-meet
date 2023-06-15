@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <section className={styles.container}>
       <m.div
-        initial={{ opacity: 0, x: -300 }}
+        initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{
           duration: 0.8,
@@ -37,11 +37,11 @@ const Intro = () => {
         />
       </m.button>
       <m.div
-        initial={{ opacity: 0, scale: 0.5 }}
+        initial={{ opacity: 0, scale: 0.6 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 0.8,
-          delay: 0.6,
+          delay: 0.4,
           ease: [0, 0.71, 0.2, 1.01]
         }}
         className={styles.scheme}>

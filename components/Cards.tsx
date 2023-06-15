@@ -5,9 +5,9 @@ const Cards = () => {
   return (
     <section className={styles.cards}>
       <m.div
-        initial={{ opacity: 0, x: -200 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.2, type: "spring", stiffness: 400, damping: 10 }}
+        transition={{ delay: 0.2, type: "spring", stiffness: 300, damping: 10 }}
         className={styles.block1}
       >
         <div className={styles.block1_items}>
@@ -18,9 +18,9 @@ const Cards = () => {
       </m.div>
       <div className={styles.block2}>
         <m.div
-          initial={{ opacity: 0, y: -200 }}
+          initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, type: "spring", stiffness: 400, damping: 10 }}
+          transition={{ delay: 0.4, type: "spring", stiffness: 300, damping: 10 }}
           className={styles.block2_1}
         >
           <div className={styles.block2_items}>
@@ -30,9 +30,9 @@ const Cards = () => {
           </div>
         </m.div>
         <m.div
-          initial={{ opacity: 0, y: -200 }}
+          initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, type: "spring", stiffness: 400, damping: 10 }}
+          transition={{ delay: 0.6, type: "spring", stiffness: 300, damping: 10 }}
           className={styles.block2_1}
         >
           <div className={styles.block2_items}>
@@ -44,7 +44,7 @@ const Cards = () => {
         <m.div
           initial={{ opacity: 0, y: -100 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, type: "spring", stiffness: 400, damping: 10 }}
+          transition={{ delay: 0.6, type: "spring", stiffness: 300, damping: 10 }}
           className={styles.block2_2}
         >
           <div className={styles.block2_items}>

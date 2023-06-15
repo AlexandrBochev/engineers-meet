@@ -10,7 +10,7 @@ const Future = () => {
   return (
     <section className={styles.future}>
       <m.div
-        initial={{ opacity: 0, scale: 0.4 }}
+        initial={{ opacity: 0, scale: 0.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.4, type: "spring", stiffness: 300, damping: 10 }}
         className={styles.title}
@@ -20,7 +20,7 @@ const Future = () => {
         <Link href="/">Learn more</Link>
       </m.div>
       <m.div
-        initial={{ opacity: 0, scale: 0.4 }}
+        initial={{ opacity: 0, scale: 0.6 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.2, type: "spring", stiffness: 300, damping: 10 }}
         className={styles.scheme}

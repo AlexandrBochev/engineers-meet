@@ -16,6 +16,8 @@
     background-position-y: 145px;
     background-repeat: no-repeat;
     padding: 35px 54px 0 27px;
+    cursor: pointer;
+    transition: 0.16s ease;
     .block1_items {
       P {
         font-family: 'Mazzard H';
@@ -44,6 +46,13 @@
     }
   }
 
+  .block1:hover, .block1:focus {
+    scale: 1.02;
+  }
+  .block1:active {
+    scale: .98;
+  }
+
   .block2 {
     .block2_1 {
       margin-top: 25px;
@@ -54,6 +63,8 @@
       border-radius: 46px;
       border: 2px solid #424549;
       padding: 25px 54px 25px 25px;
+      cursor: pointer;
+      transition: 0.16s ease;
       .block2_items {
         P {
           font-family: 'Mazzard H';
@@ -82,6 +93,13 @@
       }
     }
 
+    .block2_1:hover, .block2_1:focus {
+      scale: 1.02;
+    }
+    .block2_1:active {
+      scale: .98;
+    }
+
     .block2_2 {
       margin-top: 25px;
       width: 334px;
@@ -95,6 +113,8 @@
       background-position-y: 210px;
       background-repeat: no-repeat;
       padding: 25px 54px 25px 25px;
+      cursor: pointer;
+      transition: 0.16s ease;
       .block2_items {
         P {
           font-family: 'Mazzard H';
@@ -121,6 +141,13 @@
           }
         }
       }
+    }
+
+    .block2_2:hover, .block2_2:focus {
+      scale: 1.02;
+    }
+    .block2_2:active {
+      scale: .98;
     }
   }
 }

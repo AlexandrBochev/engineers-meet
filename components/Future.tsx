@@ -4,16 +4,27 @@ import lineSm from '../public/line-sm.svg'
 import lineLg from '../public/line-lg.svg'
 import futureLogo from '../public/future-logo.svg'
 import Link from 'next/link'
+import { motion as m } from "framer-motion"
 
 const Future = () => {
   return (
     <section className={styles.future}>
-      <div className={styles.title}>
+      <m.div
+        initial={{ opacity: 0, scale: 0.4 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.4, type: "spring", stiffness: 300, damping: 10 }}
+        className={styles.title}
+      >
         <h2>The future <span>of</span> Cryptocurrency trading <span>platform</span></h2>
         <p>Take advantage of time and sales, futures spread orders and depth trader — plus, trade directly from charts.</p>
         <Link href="/">Learn more</Link>
-      </div>
-      <div className={styles.scheme}>
+      </m.div>
+      <m.div
+        initial={{ opacity: 0, scale: 0.4 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.2, type: "spring", stiffness: 300, damping: 10 }}
+        className={styles.scheme}
+      >
         <div className={styles.linesm}>
           <Image
             src={lineSm}
@@ -53,7 +64,7 @@ const Future = () => {
           </div>
           <p className={styles.consumers}>Consumers</p>
         </div>
-      </div>
+      </m.div>
     </section>
   )
 }

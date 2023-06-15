@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import styles from './Navbar.module.scss'
 import arrow from '../public/arrow-left-up.svg'
+import Link from 'next/link'
 
 const Navbar = () => {
 
@@ -32,10 +33,10 @@ const Navbar = () => {
   return (
     <div>
       <nav className={menuClass}>
-        <a href="/" className={styles.logo}>C</a>
+        <Link href="/" className={styles.logo}>C</Link>
         <div className={itemsClass}>
           <ul>
-            { items.map(item => <li id={item}><a href="/" onClick={updateMenu}>{item}</a></li>) }
+            { items.map(item => <li id={item}><Link href="/" onClick={updateMenu}>{item}</Link></li>) }
           </ul>
           <div className={styles.btn} onClick={updateMenu}>
             <p>Career</p>

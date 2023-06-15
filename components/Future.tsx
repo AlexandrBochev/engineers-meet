@@ -3,6 +3,7 @@ import Image from 'next/image'
 import lineSm from '../public/line-sm.svg'
 import lineLg from '../public/line-lg.svg'
 import futureLogo from '../public/future-logo.svg'
+import Link from 'next/link'
 
 const Future = () => {
   return (
@@ -10,7 +11,7 @@ const Future = () => {
       <div className={styles.title}>
         <h2>The future <span>of</span> Cryptocurrency trading <span>platform</span></h2>
         <p>Take advantage of time and sales, futures spread orders and depth trader — plus, trade directly from charts.</p>
-        <a href="/">Learn more</a>
+        <Link href="/">Learn more</Link>
       </div>
       <div className={styles.scheme}>
         <div className={styles.linesm}>

@@ -1,0 +1,146 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 418px;
+}
+
+.mouse {
+  display: none;
+}
+
+.title {
+  p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #AAAAAA;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 48px;
+    text-align: center;
+    margin-top: 11px;
+  }
+}
+
+.article {
+  .chart {
+    margin-top: 40px;
+  }
+  .level {
+    max-width: 367px;
+    margin: 32px 0 0 0;
+    h3 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 43px;
+      margin: 0 0 -12px;
+    }
+    .text {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 32px;
+      img {
+        margin: -8px 0 0 -12px;
+      }
+      p {
+        font-family: 'Mazzard H';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #E9E9E9;
+        margin-left: 8px;
+      }
+    }
+    button {
+      width: 190px;
+      height: 60px;
+      background: linear-gradient(140.6deg, #3E6FF9 -27.18%, #3E53F8 126.06%);
+      box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #FFFFFF;
+      border: none;
+      margin-top: 33px;
+      cursor: pointer;
+    }
+    button:hover, button:focus {
+      box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.9);
+    }
+    button:active {
+      background: linear-gradient(140.6deg, #9cb5fc -27.18%, #3E53F8 126.06%);
+      box-shadow: 0px 0px 49px rgba(42, 7, 254, 1);
+    }
+  }
+}
+
+// media
+@media (min-width: 768px) {
+  .about {
+    margin-top: 118px;
+  }
+  .mouse {
+    display: block;
+  }
+  .title {
+    margin-top: 143px;
+    h2 {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 120%;
+      margin-top: 21px;
+    }
+  }
+  .article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 65px;
+    .chart {
+      margin: 0 20px 0 0;
+    }
+    .level {
+      margin-top: 0;
+      h3 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 43px;
+      }
+      .text {
+        p {
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+      button {
+        width: 205px;
+        height: 62px;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 44px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    margin-top: 65px;
+    .chart {
+      margin: 0 181px 0 0;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 190px;
+    height: 60px;
+    background: linear-gradient(140.6deg, #3E6FF9 -27.18%, #3E53F8 126.06%);
+    box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 40px auto 0;
+    padding: 14px 14px 14px 29px;
+    cursor: pointer;
+  }
+
+  button:hover, button:focus {
+    box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.9);
+  }
+  button:active {
+    background: linear-gradient(140.6deg, #9cb5fc -27.18%, #3E53F8 126.06%);
+    box-shadow: 0px 0px 49px rgba(42, 7, 254, 1);
+  }
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 122px 0 0;
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #AAAAAA;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 61px;
+    color: #FFFFFF;
+    text-shadow: 0px 5.14068px 5.14068px rgba(0, 0, 0, 0.25);
+    margin: 16px 0;
+    span {
+      background: linear-gradient(89.95deg, #487FFF -1.65%, #73B5FF 51.06%, #CB76FF 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0px 5.14068px 5.14068px rgba(0, 0, 0, 0.25);
+    }
+  }
+  .article {
+    max-width: 246px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+    color: #E9E9E9;
+  }
+}
+
+.scheme {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../public/scheme.svg);
+  background-size: 383.93px 272px;
+  background-position-x: 30.5vw;
+  background-position-y: 538px;
+  background-repeat: no-repeat;
+  z-index: -10;
+}
+
+// media
+@media (min-width: 768px) {
+  .container {
+    button {
+      width: 220px;
+      height: 68px;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: #FFFFFF;
+      margin: 94px auto 0;
+      padding: 17px 22px 17px 30px;
+      cursor: pointer;
+    }
+  }
+
+  .title {
+    align-items: flex-start;
+    p {
+      font-size: 19.2776px;
+      line-height: 23px;
+      text-align: left;
+    }
+    h1 {
+      width: 640px;
+      font-size: 96.3878px;
+      line-height: 90px;
+      text-align: left;
+      margin: 32px 0;
+    }
+    .article {
+      max-width: 600px;
+      font-weight: 400;
+      font-size: 25.7034px;
+      line-height: 30px;
+    }
+  }
+
+  .scheme {
+    background-size: 614px 435px;
+    background-position-x: 59.5vw;
+    background-position-y: 210px;
+  }
+}
